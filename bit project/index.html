@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Control Desktop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="command-section">
+            <input type="text" id="commandInput" placeholder="Type your command here...">
+            <button id="sendCommandBtn">Send</button>
+        </div> -->
+        
+        <div class="control-icons">
+            <button id="voiceCommandBtn"><img src="mic-icon.png" alt="Voice Command"></button>
+            <button id="historyBtn"><img src="history-icon.png" alt="History"></button>
+            <button id="settingsBtn"><img src="settings-icon.png" alt="Settings"></button>
+        </div>
+
+        <div id="historyModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Command History</h2>
+                <div id="historyContent"></div>
+            </div>
+        </div>
+
+        <div id="settingsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Available Commands</h2>
+                <ul>
+                    <li>Open Notepad</li>
+                    <li>Open Word</li>
+                    <li>Open Excel</li>
+                    <li>Close VS Code</li>
+                    <li>Minimize VS Code</li>
+                    <li>Call Tushar</li>
+                    <!-- Add more commands as necessary -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
